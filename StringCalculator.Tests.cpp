@@ -54,3 +54,9 @@ TEST(StringCalculatorAddTests, ExpectSumemptystring) {
     int result = add(input);
     ASSERT_EQ(result, expectedresult);
 }
+TEST(StringCalculatorAddTests, ExpectWithCustomDelimiter_1) {
+    int expectedresult = 0;
+    const char*  input = "//;some_delim";
+    int result = add(input);
+    ASSERT_EQ(result, expectedresult);
+}
